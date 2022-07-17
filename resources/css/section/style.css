@@ -1,0 +1,470 @@
+@import url("https://fonts.googleapis.com/css2?family=Rufina:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../../public/assets/BgColor.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  align-items: center;
+  z-index: -1;
+  overflow-x: hidden;
+}
+.container ::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 70%;
+  height: 100%;
+  background: linear-gradient(90deg, #16181b 0%, rgba(22, 24, 27, 0.7) 51.56%, rgba(22, 24, 27, 0) 100%);
+  z-index: -1;
+}
+.container .slogan {
+  overflow: hidden;
+  width: 40vw;
+  align-items: center;
+}
+.container .slogan h2 {
+  font-weight: 90;
+  color: #dcca87;
+  font-size: 78px;
+  line-height: 82px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+.container .slogan p {
+  color: #fff;
+  overflow: hidden;
+}
+@media screen and (max-width: 700px) {
+  .container {
+    background-position: center;
+    background-size: cover;
+  }
+  .container .slogan {
+    width: 60%;
+  }
+  .container .slogan h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+.conten {
+  width: 100vw;
+  color: black;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em 0;
+}
+.conten .card {
+  width: 35%;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 2em;
+}
+.conten .card img {
+  width: 60%;
+  height: 50%;
+  align-self: center;
+}
+.conten .card h1 {
+  font-family: "Rufina";
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.conten .card p {
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+@media screen and (max-width: 768px) {
+  .conten {
+    flex-direction: column;
+  }
+  .conten .card {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+.Post {
+  width: 100vw;
+  background-color: #f8f4e7;
+}
+.Post ul {
+  display: flex;
+  justify-content: center;
+}
+.Post li {
+  font-size: 1.4vw;
+  display: inline-block;
+  margin: 12px;
+}
+.Post .kontainer-img {
+  margin-top: 7em;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.Post .kontainer-img .card-1 img {
+  padding-right: 3em;
+}
+.Post .kontainer-img .card-2 {
+  color: white;
+}
+.Post .kontainer-img .card-2 .absol-text, .Post .kontainer-img .card-2 .card-1 .absol-text1, .Post .kontainer-img .card-1 .card-2 .absol-text1 {
+  position: absolute;
+  bottom: 9vh;
+  width: 20%;
+  right: 8vw;
+}
+.Post .kontainer-img .card-2 .absol-text h2, .Post .kontainer-img .card-2 .card-1 .absol-text1 h2, .Post .kontainer-img .card-1 .card-2 .absol-text1 h2 {
+  font-size: 1.7vw;
+}
+.Post .kontainer-img .card-2 .absol-text p, .Post .kontainer-img .card-2 .card-1 .absol-text1 p, .Post .kontainer-img .card-1 .card-2 .absol-text1 p {
+  margin: 2em 0;
+  font-size: 12px;
+}
+.Post .kontainer-img .card-3 {
+  color: white;
+}
+.Post .kontainer-img .card-3 .absol-text1 {
+  width: 20%;
+  position: absolute;
+  bottom: 12vh;
+  left: 3vw;
+}
+.Post .kontainer-img .card-3 .absol-text1 h2 {
+  font-size: 1.7vw;
+}
+.Post .kontainer-img .card-3 .absol-text1 p {
+  margin: 2em 0;
+  font-size: 12px;
+}
+.Post .kontainer-img .card-4 {
+  color: white;
+}
+.Post .kontainer-img .card-4 img {
+  padding-left: 3em;
+}
+.Post .kontainer-img .card-4 .absol-text2 {
+  position: absolute;
+  bottom: 11vh;
+  left: 37vw;
+  width: 30%;
+}
+.Post .kontainer-img .card-4 .absol-text2 h2 {
+  font-size: 1.7vw;
+}
+.Post .kontainer-img .card-4 .absol-text2 p {
+  margin: 2em 0;
+  font-size: 12px;
+}
+.Post .kontainer-img .card-1 {
+  height: 100%;
+}
+.Post .kontainer-img .card-1 .absol-text, .Post .kontainer-img .card-1 .absol-text1 {
+  width: 30%;
+  color: white;
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+  left: 2em;
+  margin-bottom: 22px;
+}
+.Post .kontainer-img .card-1 .absol-text h2, .Post .kontainer-img .card-1 .absol-text1 h2 {
+  font-size: 1.7vw;
+}
+.Post .kontainer-img .card-1 .absol-text p, .Post .kontainer-img .card-1 .absol-text1 p {
+  margin: 2em 0;
+  font-size: 12px;
+}
+.Post .kontainer-img .card-1 .absol-text1 {
+  right: 0;
+  left: 500px;
+}
+@media screen and (max-width: 500px) {
+  .Post .kontainer-img .card-1 img {
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .Post ul li {
+    font-size: 12px;
+  }
+}
+.Post .btn {
+  display: flex;
+  justify-content: center;
+  padding: 3em 0;
+}
+.Post .btn p {
+  border: 3px solid black;
+  padding: 0 1em;
+}
+
+.content-testi {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.content-testi .text {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-testi .text p {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 2em;
+  font-weight: bold;
+}
+.content-testi .img-space {
+  width: 86vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.content-testi .card-img {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.content-testi .card-img .card-txt {
+  margin-left: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-testi .card-img .card-txt h2 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+@media screen and (max-width: 500px) {
+  .content-testi .card-img {
+    flex-flow: column wrap;
+  }
+  .content-testi .text {
+    width: 83vw;
+  }
+  .content-testi .text p {
+    font-size: 12px;
+  }
+  .content-testi .img-space img {
+    width: 9vw;
+  }
+}
+
+.Menu-content {
+  margin-top: 7em;
+}
+.Menu-content .Menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Menu-content .Menu .tulis {
+  width: 27%;
+  font-size: 3.4vw;
+  font-weight: bold;
+}
+.Menu-content .Menu p {
+  align-self: center;
+  border: 2px solid black;
+  font-size: 1.3vw;
+  padding: 1.1vw;
+}
+@media screen and (max-width: 700px) {
+  .Menu-content .Menu .tulis {
+    font-size: 17.7px;
+  }
+  .Menu-content .Menu p {
+    font-size: 14px;
+    padding: 0.9vw;
+  }
+}
+.Menu-content .gmbr {
+  display: flex;
+  flex-direction: row;
+}
+.Menu-content .gmbr .gmbr-1 {
+  margin-top: 2em;
+  padding: 0 0.7em;
+}
+.Menu-content .gmbr .gmbr-1 img {
+  width: 100%;
+  border-radius: 20px;
+}
+.Menu-content .gmbr .gmbr-1 .pembungkus {
+  margin: 1em;
+}
+.Menu-content .gmbr .gmbr-1 .pembungkus .arrow {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  margin: 1em 0;
+}
+.Menu-content .gmbr .gmbr-1 .pembungkus .arrow img {
+  margin: 0 1em;
+  width: 2vw;
+}
+.Menu-content .gmbr .gmbr-1 .pembungkus .title {
+  font-family: "Rufina";
+  font-size: 2vw;
+  font-weight: bold;
+}
+.Menu-content .gmbr .gmbr-1 .pembungkus img {
+  margin: 2em 0;
+}
+.Menu-content .gmbr .gmbr-1 .pembungkus .pdes {
+  font-size: 1.4vw;
+}
+@media screen and (max-width: 700px) {
+  .Menu-content .gmbr .gmbr-1 .pembungkus .title {
+    font-size: 14.7px;
+  }
+  .Menu-content .gmbr .gmbr-1 .pembungkus .pdes {
+    font-size: 12.8px;
+  }
+  .Menu-content .gmbr .gmbr-1 .pembungkus .arrow {
+    font-size: 14.7px;
+  }
+}
+.Menu-content .gmbr .gmbr-1 .txt {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 1em;
+}
+.Menu-content .gmbr .gmbr-1 .txt span {
+  align-self: center;
+  margin: 0 1em;
+  width: 4px;
+  height: 4px;
+  background-color: black;
+  border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  .Menu-content .gmbr {
+    flex-direction: column;
+  }
+  .Menu-content .gmbr img {
+    width: 90%;
+    height: 80%;
+  }
+  .Menu-content .gmbr .gmbr-1 .txt {
+    font-size: 15px;
+  }
+}
+
+.conta {
+  padding: 2em;
+}
+
+.Reservation {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background-color: #f8f4e7;
+  padding: 2em;
+}
+.Reservation h1 {
+  font-weight: bold;
+  font-size: 3vw;
+  font-family: "Rufina";
+}
+.Reservation p {
+  font-size: 1.2vw;
+}
+.Reservation form {
+  margin: 2em 0;
+  display: flex;
+}
+.Reservation form input {
+  margin: 0 0.5em;
+  width: 28vw;
+}
+.Reservation .booking {
+  background-color: black;
+  color: white;
+  margin: 1em 0;
+  padding: 12px 25px;
+}
+@media screen and (max-width: 500px) {
+  .Reservation h1 {
+    font-size: 7vw;
+  }
+  .Reservation p {
+    font-size: 3vw;
+  }
+  .Reservation form {
+    flex-direction: column;
+  }
+  .Reservation form input {
+    margin: 1em 0;
+    width: 60vw;
+  }
+  .Reservation form .booking {
+    margin: 0;
+  }
+}
+
+footer {
+  padding: 2em;
+  color: white;
+  background-color: black;
+}
+footer .img {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer i {
+  font-family: "Rufina";
+  font-size: 3vw;
+}
+footer .footer .social {
+  width: 11vw;
+  font-size: 1.8vw;
+}
+footer .footer .social .img {
+  margin: 2em 0;
+  width: 8vw;
+}
+footer .footer .social p {
+  margin: 2em 0;
+  font-size: 1vw;
+}
+footer .footer-bottom {
+  padding: 1em 0;
+}
+footer .footer-bottom p {
+  padding: 2em 0;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  footer .social .img img {
+    margin: 0 2px;
+    width: 12px;
+  }
+}/*# sourceMappingURL=style.css.map */

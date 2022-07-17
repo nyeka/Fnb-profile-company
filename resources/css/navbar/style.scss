@@ -1,0 +1,76 @@
+$navColor: #fff;
+$primary: #dcca87;
+
+@import url("https://fonts.googleapis.com/css2?family=Rufina:wght@700&display=swap");
+
+body {
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    background: #16181b;
+    height: 108px;
+    align-items: center;
+
+    .contain {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+
+        i {
+            font-size: 2.5vw;
+            width: 2vw;
+            font-family: "Rufina";
+            color: $primary;
+            font-weight: bold;
+        }
+    }
+
+    li {
+        cursor: pointer;
+        display: inline-block;
+        margin-left: 2em;
+        color: $navColor;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+
+        .bt {
+            width: 8vw;
+            font-size: 1vw;
+            color: $navColor;
+            border: 3px solid $navColor;
+            padding: 6px;
+            margin-left: 2em;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 720px) {
+            .bt {
+                font-size: 12px;
+                width: 90px;
+            }
+        }
+    }
+
+    z-index: 1;
+
+    @media screen and (max-width: 720px) {
+        ul {
+            display: none;
+        }
+
+        .contain {
+            i {
+                font-size: 24px;
+            }
+        }
+    }
+}

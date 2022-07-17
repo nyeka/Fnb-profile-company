@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Rufina:wght@700&display=swap");
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  width: 100vw;
+  background: #16181b;
+  height: 108px;
+  align-items: center;
+  z-index: 1;
+}
+nav .contain {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+nav .contain i {
+  font-size: 2.5vw;
+  width: 2vw;
+  font-family: "Rufina";
+  color: #dcca87;
+  font-weight: bold;
+}
+nav li {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 2em;
+  color: #fff;
+}
+nav .content {
+  display: flex;
+  align-items: center;
+}
+nav .content .bt {
+  width: 8vw;
+  font-size: 1vw;
+  color: #fff;
+  border: 3px solid #fff;
+  padding: 6px;
+  margin-left: 2em;
+  text-align: center;
+}
+@media screen and (max-width: 720px) {
+  nav .content .bt {
+    font-size: 12px;
+    width: 90px;
+  }
+}
+@media screen and (max-width: 720px) {
+  nav ul {
+    display: none;
+  }
+  nav .contain i {
+    font-size: 24px;
+  }
+}/*# sourceMappingURL=style.css.map */
